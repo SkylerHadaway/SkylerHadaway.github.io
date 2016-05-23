@@ -1,21 +1,19 @@
 ---
 layout: post
-title:  "23 May 2016 New Blog"
+title:  "23 May 2016 < 2 Weeks until Birthday"
 date:   2016-05-23 14:52:53 -0400
 categories: jekyll update
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
-
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+NORTH GEORGIA - This blog was created in an attempt to learn how to use Jekyll and RubyGem on Codecademy. There is no telling how long it will continue or if it will even continue. I may also use this as a way to test different effects of changing the code.
 
 Jekyll also offers powerful support for code snippets:
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
+{% highlight lua %}
+print("Test")
+pie=3.14
+if pie<4 then
+  print("Yes")
 end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
 {% endhighlight %}
 
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
