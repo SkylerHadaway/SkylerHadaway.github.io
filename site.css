@@ -1,7 +1,206 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&family=Nunito:wght@300;400&family=Poppins:wght@300&family=Quicksand&family=Zilla+Slab&display=swap');
+
+/*
+font-family: 'Maven Pro', sans-serif; - Headers
+font-family: 'Nunito', sans-serif; - Body Paragraphs
+font-family: 'Poppins', sans-serif; - Menu Items
+font-family: 'Quicksand', sans-serif;
+font-family: 'Zilla Slab', serif; - Resume
+*/
+
+/* Keqima (My name) */
+@font-face {
+    font-family: 'Keqima';
+    src: url('Keqima.woff') format('woff');
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
+    font-family: 'Nunito', sans-serif;
     text-align: center;
-    font: "Poppins";
-    color: #545454;
-    background-color: bisque;
+    margin: 0;
+    font-size: 20px;
+    line-height: 20px;
+    color: #123A40;
+    background-color: #FFE66D;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+    font-family: 'Maven Pro';
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(18, 58, 64, 0.75), rgba(0, 0, 0, 0));
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #FFE66D; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #123A40; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #2D909F; 
+}
+
+#header {
+    color: #ffffff;
+    position: fixed;
+    top: 34%; /* 325px */
+    left: 30;
+    letter-spacing: 0.2em;
+    text-align: center;
+    width: 200px;
+    background-color: #123A40;
+    line-height: 40px;
+    font-size: 25px;
+    z-index: 1000;
+}
+
+#special {
+    background-color: #123A40
+}
+
+#special:hover {
+    background-color: #2D909F
+}
+
+.rright-triangle, .rleft-triangle, .lright-triangle, .lleft-triangle {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0; /* 45, 210 */ 
+    border-style: solid;
+    z-index: 1001;
+}
+
+.rright-triangle {
+    right: 0;
+    border-width: 0 0px 80px 20px;
+    border-color: transparent transparent #FFE66D transparent;
+}
+
+.rleft-triangle {
+    left: 0;
+    border-width: 80px 20px 0 0px;
+    border-color: #FFE66D transparent transparent transparent;
+}
+
+.lright-triangle {
+    right: 0;
+    border-width: 80px 0px 0 20px;
+    border-color: #FFE66D transparent transparent transparent;
+}
+
+.lleft-triangle {
+    left: 0;
+    border-width: 0 20px 80px 0px;
+    border-color: transparent transparent #FFE66D transparent;
+}
+
+.vertical-menu {
+    width: 200px; /* Set a width if you like */
+    position: absolute;
+    top: 80;
+}
+
+.vertical-menu a {
+    background-color: #1F656F; 
+    font-family: 'Poppins';
+    font-size: 18px;
+    position: relative;
+    color: #FFFFFF; 
+    height: 80px;
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    opacity: 0.9;
+    -webkit-transition: background-color 500ms, opacity 500ms;
+}
+
+.vertical-menu a:hover {
+    background-color: #2D909F;
+    opacity: 1;
+}
+
+.green, .red, .ared, .blue {
+    position: fixed;
+    height: 50%;
+    z-index: 999;
+}
+
+.green {
+    border-left: 20px solid #00B85C; /*  */
+    left: 100px;
+    bottom: 0;
+}
+
+.white {
+    border-left: 20px solid #F7FFF7;
+    position: fixed;
+    height: 100%;
+    left: 120px;
+    z-index: 999;
+}
+
+.red {
+    border-left: 20px solid #E25057;
+    left: 140px;
+    bottom: 0;
+}
+
+.ared {
+    border-left: 20px solid #E25057;
+    left: 100px;
+}
+
+.blue {
+    border-left: 20px solid #2D909F;
+    left: 140px;
+}
+
+.inner {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.name {
+    font-family: 'Keqima';
+    z-index: 88888;
+}
+
+a {
+    text-decoration: none;
+}
+
+.middle {
+    background-color: #FFE66D;
+    position: absolute;
+    display: block;
+    height: 100%;
+    margin-left: 25%;
+    width: 50%;
+    text-align: left;
+    line-height: 28px;
+}
+
+.resume {
+    font-family: 'Zilla Slab', serif;
+    color: #123A40
 }
