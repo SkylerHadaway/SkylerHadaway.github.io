@@ -62,7 +62,8 @@ hr {
 #header {
     color: #ffffff;
     position: fixed;
-    top: 34%; /* 325px */
+    top: 50%; /* 325px */
+    margin-top: -160px;
     left: 30;
     letter-spacing: 0.2em;
     text-align: center;
